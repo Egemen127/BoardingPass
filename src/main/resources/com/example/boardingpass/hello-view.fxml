@@ -1,16 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.boardingpass.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane id="apane" fx:id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="349.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.boardingpass.HelloController">
+   <children>
+      <ImageView fx:id="img" fitHeight="391.0" fitWidth="661.0" layoutX="-41.0" layoutY="-26.0" pickOnBounds="true" preserveRatio="true" />
+      <DatePicker fx:id="timeSelect" layoutX="353.0" layoutY="75.0" prefHeight="17.0" prefWidth="195.0" promptText="Select Time" />
+      <TextField fx:id="nameLabel" layoutX="14.0" layoutY="75.0" prefHeight="25.0" prefWidth="151.0" promptText="Name" />
+      <TextField fx:id="emailLabel" layoutX="14.0" layoutY="123.0" prefHeight="25.0" prefWidth="151.0" promptText="Email" />
+      <TextField fx:id="numberLabel" layoutX="14.0" layoutY="178.0" promptText="Phone Number" />
+      <TextField fx:id="ageLabel" layoutX="14.0" layoutY="227.0" promptText="Age" />
+      <RadioButton id="Radio1" fx:id="radioMale" layoutX="41.0" layoutY="280.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="79.0" selected="true" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="Gender" />
+         </toggleGroup></RadioButton>
+      <RadioButton id="Radio2" fx:id="radioFemale" layoutX="41.0" layoutY="311.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="79.0" text="Female" toggleGroup="$Gender" />
+      <Label fx:id="priceLabel" layoutX="413.0" layoutY="169.0" text="Price: ">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="41.0" layoutY="42.0" text="Personal Information" />
+      <Label layoutX="398.0" layoutY="42.0" text="Flight Information" />
+      <Label layoutX="200.0" layoutY="14.0" text="Genspark Airlines Ticket Form" />
+      <Button fx:id="welcomeText" layoutX="370.0" layoutY="305.0" mnemonicParsing="false" onAction="#SendForm" text="Submit" />
+      <Button fx:id="calcPrice" layoutX="278.0" layoutY="163.0" mnemonicParsing="false" onAction="#calculatePrice" text="Calculate Price" textFill="#000000ba" />
+      <Accordion layoutX="188.0" layoutY="105.0" />
+      <Label id="error" fx:id="error" layoutX="271.0" layoutY="217.0" prefHeight="81.0" prefWidth="284.0" textFill="#221b1b" wrapText="true">
+         <font>
+            <Font name="Century" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="hour" layoutX="275.0" layoutY="111.0" prefHeight="25.0" prefWidth="63.0" promptText="Hour" />
+      <TextField fx:id="min" layoutX="353.0" layoutY="111.0" prefHeight="25.0" prefWidth="57.0" promptText="Minute" />
+      <ChoiceBox fx:id="loc" layoutX="429.0" layoutY="111.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,4 @@
+Passenger1|p1@email.com|5555555555|false|34|LAX|Los Angeles, CA|05/23/2022-15:00|05/23/2022-20:26|1000.0|3e4a6996-e157-45bc-8cb6-24545a097cf7
+Passenger2|p2@email.com|1234567890|true|34|LAX|Los Angeles, CA|05/23/2022-15:00|05/23/2022-20:26|750.0|b10f21f4-518b-4532-8bbc-6d8aadbe1bd9
+Passenger3|p3@email.com|5555555555|false|65|LAX|Los Angeles, CA|05/23/2022-23:00|05/24/2022-04:26|400.0|12248854-4ca2-4468-97a0-1c81fc7db3af
+Passenger4|p4@email.com|5555555555|false|9|LAX|Los Angeles, CA|05/25/2022-23:59|05/26/2022-05:25|500.0|39b2dfee-e624-4ba7-adc8-778f12974ffc

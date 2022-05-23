@@ -1,0 +1,12 @@
+                    Genspark Airlines
+Ticket Information                       Personal Details
+
+From: JFK                                Name: Passenger1
+Destination: LAX                         Email: p1@email.com
+Departure Time: 05/23/2022-15:00 EST     Number: 5555555555
+ETA: 05/23/2022-20:26 EST                Gender: Male
+                                         Age: 34
+
+This ticket is valid for either direction
+Your Unique ticket id is 3e4a6996-e157-45bc-8cb6-24545a097cf7
+Thank you for flying with Genspark Airlines

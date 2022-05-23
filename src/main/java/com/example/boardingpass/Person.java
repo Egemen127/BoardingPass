@@ -13,4 +13,7 @@ public class Person {
         this.gender = gender;
 
     }
+    public Person(){
+
+    }
 }

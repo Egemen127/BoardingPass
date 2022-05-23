@@ -1,0 +1,6 @@
+LAX|Los Angeles, CA|326|1000
+PHX|Phoenix, AZ|289|900
+DEN|Denver, CO|226|550
+LAS|Las Vegas, NV|300|1000
+DFW|Dallas&Ft.Worth, TX|196|450
+MCO|Orlando, FL|133|300
